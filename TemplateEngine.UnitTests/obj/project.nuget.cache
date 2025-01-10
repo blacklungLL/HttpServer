@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "OBAQAnCU1uE2xHxkSZKdDEuKRUDTfM50rngK2vthT4CC/bBtopxgpAEfiMVxKa2QB+zx+hOYIEHEwxgS8giQCA==",
+  "success": true,
+  "projectFilePath": "/Users/overmann/Desktop/MyHttpServer_19_11_24/TemplateEngine.UnitTests/TemplateEngine.UnitTests.csproj",
+  "expectedPackageFiles": [
+    "/Users/overmann/.nuget/packages/nunit/4.2.2/nunit.4.2.2.nupkg.sha512"
+  ],
+  "logs": []
+}

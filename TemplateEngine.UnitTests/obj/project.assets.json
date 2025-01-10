@@ -1,0 +1,143 @@
+{
+  "version": 3,
+  "targets": {
+    "net7.0": {
+      "NUnit/4.2.2": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/nunit.framework.dll": {
+            "related": ".legacy.xml;.xml"
+          },
+          "lib/net6.0/nunit.framework.legacy.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/nunit.framework.dll": {
+            "related": ".legacy.xml;.xml"
+          },
+          "lib/net6.0/nunit.framework.legacy.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "build/NUnit.props": {}
+        }
+      },
+      "TemplateEngine/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/TemplateEngine.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/TemplateEngine.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "NUnit/4.2.2": {
+      "sha512": "mon0OPko28yZ/foVXrhiUvq1LReaGsBdziumyyYGxV/pOE4q92fuYeN+AF+gEU5pCjzykcdBt5l7xobTaiBjsg==",
+      "type": "package",
+      "path": "nunit/4.2.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.txt",
+        "NOTICES.md",
+        "README.md",
+        "THIRD_PARTY_NOTICES.md",
+        "build/NUnit.props",
+        "icon.png",
+        "lib/net462/nunit.framework.dll",
+        "lib/net462/nunit.framework.legacy.dll",
+        "lib/net462/nunit.framework.legacy.xml",
+        "lib/net462/nunit.framework.xml",
+        "lib/net6.0/nunit.framework.dll",
+        "lib/net6.0/nunit.framework.legacy.dll",
+        "lib/net6.0/nunit.framework.legacy.xml",
+        "lib/net6.0/nunit.framework.xml",
+        "nunit.4.2.2.nupkg.sha512",
+        "nunit.nuspec"
+      ]
+    },
+    "TemplateEngine/1.0.0": {
+      "type": "project",
+      "path": "../TemplateEngine/TemplateEngine.csproj",
+      "msbuildProject": "../TemplateEngine/TemplateEngine.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net7.0": [
+      "NUnit >= 4.2.2",
+      "TemplateEngine >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "/Users/overmann/.nuget/packages/": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "/Users/overmann/Desktop/MyHttpServer_19_11_24/TemplateEngine.UnitTests/TemplateEngine.UnitTests.csproj",
+      "projectName": "TemplateEngine.UnitTests",
+      "projectPath": "/Users/overmann/Desktop/MyHttpServer_19_11_24/TemplateEngine.UnitTests/TemplateEngine.UnitTests.csproj",
+      "packagesPath": "/Users/overmann/.nuget/packages/",
+      "outputPath": "/Users/overmann/Desktop/MyHttpServer_19_11_24/TemplateEngine.UnitTests/obj/",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "/Users/overmann/.nuget/NuGet/NuGet.Config"
+      ],
+      "originalTargetFrameworks": [
+        "net7.0"
+      ],
+      "sources": {
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "projectReferences": {
+            "/Users/overmann/Desktop/MyHttpServer_19_11_24/TemplateEngine/TemplateEngine.csproj": {
+              "projectPath": "/Users/overmann/Desktop/MyHttpServer_19_11_24/TemplateEngine/TemplateEngine.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net7.0": {
+        "targetAlias": "net7.0",
+        "dependencies": {
+          "NUnit": {
+            "target": "Package",
+            "version": "[4.2.2, )"
+          }
+        },
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.312/RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

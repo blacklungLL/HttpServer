@@ -1,0 +1,15 @@
+{
+  "Domain": "localhost",
+  "Port": 8888,
+  "StaticDirectoryPath": "public/",
+
+  "SmtpServer": {
+    "Host": "",
+    "Port": 456,
+    "IsSSL": true,
+    "NetworkCredential": {
+      "UserName": "somemail@gmail.com",
+      "Password": "Password"
+    }
+   }
+}

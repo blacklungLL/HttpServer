@@ -1,0 +1,12 @@
+/Users/overmann/Desktop/MyHttpServer_19_11_24/MyORMLibrary/bin/Debug/net7.0/MyORMLibrary.deps.json
+/Users/overmann/Desktop/MyHttpServer_19_11_24/MyORMLibrary/bin/Debug/net7.0/MyORMLibrary.dll
+/Users/overmann/Desktop/MyHttpServer_19_11_24/MyORMLibrary/bin/Debug/net7.0/MyORMLibrary.pdb
+/Users/overmann/Desktop/MyHttpServer_19_11_24/MyORMLibrary/obj/Debug/net7.0/MyORMLibrary.csproj.AssemblyReference.cache
+/Users/overmann/Desktop/MyHttpServer_19_11_24/MyORMLibrary/obj/Debug/net7.0/MyORMLibrary.GeneratedMSBuildEditorConfig.editorconfig
+/Users/overmann/Desktop/MyHttpServer_19_11_24/MyORMLibrary/obj/Debug/net7.0/MyORMLibrary.AssemblyInfoInputs.cache
+/Users/overmann/Desktop/MyHttpServer_19_11_24/MyORMLibrary/obj/Debug/net7.0/MyORMLibrary.AssemblyInfo.cs
+/Users/overmann/Desktop/MyHttpServer_19_11_24/MyORMLibrary/obj/Debug/net7.0/MyORMLibrary.csproj.CoreCompileInputs.cache
+/Users/overmann/Desktop/MyHttpServer_19_11_24/MyORMLibrary/obj/Debug/net7.0/MyORMLibrary.dll
+/Users/overmann/Desktop/MyHttpServer_19_11_24/MyORMLibrary/obj/Debug/net7.0/refint/MyORMLibrary.dll
+/Users/overmann/Desktop/MyHttpServer_19_11_24/MyORMLibrary/obj/Debug/net7.0/MyORMLibrary.pdb
+/Users/overmann/Desktop/MyHttpServer_19_11_24/MyORMLibrary/obj/Debug/net7.0/ref/MyORMLibrary.dll

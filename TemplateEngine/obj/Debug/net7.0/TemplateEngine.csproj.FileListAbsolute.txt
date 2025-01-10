@@ -1,0 +1,12 @@
+/Users/overmann/Desktop/MyHttpServer_19_11_24/TemplateEngine/bin/Debug/net7.0/TemplateEngine.deps.json
+/Users/overmann/Desktop/MyHttpServer_19_11_24/TemplateEngine/bin/Debug/net7.0/TemplateEngine.dll
+/Users/overmann/Desktop/MyHttpServer_19_11_24/TemplateEngine/bin/Debug/net7.0/TemplateEngine.pdb
+/Users/overmann/Desktop/MyHttpServer_19_11_24/TemplateEngine/obj/Debug/net7.0/TemplateEngine.csproj.AssemblyReference.cache
+/Users/overmann/Desktop/MyHttpServer_19_11_24/TemplateEngine/obj/Debug/net7.0/TemplateEngine.GeneratedMSBuildEditorConfig.editorconfig
+/Users/overmann/Desktop/MyHttpServer_19_11_24/TemplateEngine/obj/Debug/net7.0/TemplateEngine.AssemblyInfoInputs.cache
+/Users/overmann/Desktop/MyHttpServer_19_11_24/TemplateEngine/obj/Debug/net7.0/TemplateEngine.AssemblyInfo.cs
+/Users/overmann/Desktop/MyHttpServer_19_11_24/TemplateEngine/obj/Debug/net7.0/TemplateEngine.csproj.CoreCompileInputs.cache
+/Users/overmann/Desktop/MyHttpServer_19_11_24/TemplateEngine/obj/Debug/net7.0/TemplateEngine.dll
+/Users/overmann/Desktop/MyHttpServer_19_11_24/TemplateEngine/obj/Debug/net7.0/refint/TemplateEngine.dll
+/Users/overmann/Desktop/MyHttpServer_19_11_24/TemplateEngine/obj/Debug/net7.0/TemplateEngine.pdb
+/Users/overmann/Desktop/MyHttpServer_19_11_24/TemplateEngine/obj/Debug/net7.0/ref/TemplateEngine.dll

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Дэдпул и Росомаха</title>
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="wrapper_video">
+        <div class="window_for_wrap_video">
+            <div class="logo_and_search">
+                <a href="main">
+                    <img src="../assets/images/logo.png" alt="logo">
+                </a>
+                <form action="/search" method="get">
+                    <input type="text" name="q" placeholder="Введите слово для поиска...">
+                </form>
+                <button type="button_for_log" id="authButton"><a href="auth/login">Авторизация</a></button>
+            </div>
+            <div class="first_two_blocks">
+                <div class="text_for_films">
+                    <div class="countries">
+                        <a>Новинки</a>
+                        <a>Русские сериалы</a>
+                        <a>Зарубежные сериалы</a>
+                        <a>Русские фильмы</a>
+                        <a>Зарубежные фильмы</a>
+                        <a>Популярные фильмы за месяц</a>
+                        <a>Популярные сериалы за месяц</a>
+                        <a>Популярные мультфильмы за месяц</a>
+                    </div>
+                    <ul class="genres">
+                        <li>
+                            <a>Комедия</a>
+                        </li>
+                        <li>
+                            <a>Ужасы</a>
+                        </li>
+                        <li>
+                            <a>Детективы</a>
+                        </li>
+                        <li>
+                            <a>Криминал</a>
+                        </li>
+                        <li>
+                            <a>Фантастика</a>
+                        </li>
+                        <li>
+                            <a>Триллер</a>
+                        </li>
+                        <li>
+                            <a>Боевики</a>
+                        </li>
+                        <li>
+                            <a>Драмы</a>
+                        </li>
+                        <li>
+                            <a>Мелодрамы</a>
+                        </li>
+                        <li>
+                            <a>Приключения</a>
+                        </li>
+                        <li>
+                            <a>Фэнтези</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="line_with_categories">
+                    <ul class="categories_on_film"> 
+                        <li>
+                            <a>Фильмы</a>
+                        </li>
+                        <li>
+                            <a>Сериалы</a>
+                        </li>
+                        <li>
+                            <a>Мультфильмы</a>
+                        </li>
+                        <li>
+                            <a>4К</a>
+                        </li>
+                        <li>
+                            <a>Случайные фильмы</a>
+                        </li>
+                    </ul>
+                    <div class="telegram">
+                        <span class="tgicon"><i class="fab fa-telegram"></i></span>
+                        Наш
+                        <a href="https://t.me/turbokinotv" rel="nofollow" target="_blank">Telegram канал</a>
+                    </div>
+                    <div class="video-container">
+                            <iframe width="645" height="400"
+                             src="https://dud.allarknow.online/?token_movie=8518b7bcfb0e99a215e671b889b29a&token=10b16a40f5793e2d02d06265c13912" frameborder="0" allowfullscreen>
+                            </iframe>
+                            <div class="description">
+                                <h1>{{title}} смотреть онлайн</h1>
+                                <div class="film-info">
+                                    <div class="film-cover">
+                                        <img src="{{cover_image}}" alt="Film Cover">
+                                    </div>
+                                    <div class="film-details">
+                                        <p><strong>Год:</strong> {{year}}</p>
+                                        <p><strong>Качество:</strong> {{video_quality}}</p>
+                                        <p><strong>Кинопоиск:</strong> {{kp_rating}}</p>
+                                        <p><strong>Страна:</strong> {{country}}</p>
+                                        <p><strong>Жанр:</strong> Фильм, Зарубежные, Фантастика, боевик, комедия</p>
+                                        <p><strong>Режиссер:</strong> {{director_id}}</p>
+                                        <p><strong>Время:</strong> {{duration}} минут</p>
+                                        <p><strong>Актеры:</strong> Райан Рейнольдс, Хью Джекман, Эмма Коррин, Морена Баккарин, Роб Делани, Каран Сони, Лесли Аггамс, Мэттью Макфэдиен, Тайлер Мэйн, Дженнифер Гарнер</p>
+                                    </div>
+                                </div>
+                                <div class="film-summary">
+                                    {{plot_summary}}
+                                </div>
+                            </div>
+                    </div>
+                </div>
+                <div class="same_films">
+                    <h1>Похожие фильмы</h1>
+                    <div class="same_films_cover">
+                        <div class="same_film_cover">
+                            <a href="#">
+                                <img src="../assets/images/substance.png" alt="Film 3">
+                                <div class="film_title">Субстанция</div>
+                            </a>
+                        </div>
+                        <div class="same_film_cover">
+                            <a href="#">
+                                <img src="../assets/images/dexter.jpeg" alt="Film 3">
+                                <div class="film_title">Декстер 8 сезон</div>
+                            </a>
+                        </div>
+                        <div class="same_film_cover">
+                            <a href="#">
+                                <img src="../assets/images/police.jpg" alt="Film 3">
+                                <div class="film_title">Условный мент</div>
+                            </a>
+                        </div>
+                        <div class="same_film_cover">
+                            <a href="#">
+                                <img src="../assets/images/vampire.jpg" alt="Film 3">
+                                <div class="film_title">Дневники Вампира</div>
+                            </a>
+                        </div>
+                        <div class="same_film_cover">
+                            <a href="#">
+                                <img src="../assets/images/Escape.jpg" alt="Film 3">
+                                <div class="film_title">Побег</div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="ruleowners">
+                <a href="#">Правообладателям</a>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

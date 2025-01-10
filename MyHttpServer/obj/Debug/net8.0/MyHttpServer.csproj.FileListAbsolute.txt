@@ -1,0 +1,17 @@
+D:\Projects\KFU\11-308\MyHttpServer\MyHttpServer\bin\Debug\net8.0\MyHttpServer.exe
+D:\Projects\KFU\11-308\MyHttpServer\MyHttpServer\bin\Debug\net8.0\MyHttpServer.deps.json
+D:\Projects\KFU\11-308\MyHttpServer\MyHttpServer\bin\Debug\net8.0\MyHttpServer.runtimeconfig.json
+D:\Projects\KFU\11-308\MyHttpServer\MyHttpServer\bin\Debug\net8.0\MyHttpServer.dll
+D:\Projects\KFU\11-308\MyHttpServer\MyHttpServer\bin\Debug\net8.0\MyHttpServer.pdb
+D:\Projects\KFU\11-308\MyHttpServer\MyHttpServer\obj\Debug\net8.0\MyHttpServer.GeneratedMSBuildEditorConfig.editorconfig
+D:\Projects\KFU\11-308\MyHttpServer\MyHttpServer\obj\Debug\net8.0\MyHttpServer.AssemblyInfoInputs.cache
+D:\Projects\KFU\11-308\MyHttpServer\MyHttpServer\obj\Debug\net8.0\MyHttpServer.AssemblyInfo.cs
+D:\Projects\KFU\11-308\MyHttpServer\MyHttpServer\obj\Debug\net8.0\MyHttpServer.csproj.CoreCompileInputs.cache
+D:\Projects\KFU\11-308\MyHttpServer\MyHttpServer\obj\Debug\net8.0\MyHttpServer.dll
+D:\Projects\KFU\11-308\MyHttpServer\MyHttpServer\obj\Debug\net8.0\refint\MyHttpServer.dll
+D:\Projects\KFU\11-308\MyHttpServer\MyHttpServer\obj\Debug\net8.0\MyHttpServer.pdb
+D:\Projects\KFU\11-308\MyHttpServer\MyHttpServer\obj\Debug\net8.0\MyHttpServer.genruntimeconfig.cache
+D:\Projects\KFU\11-308\MyHttpServer\MyHttpServer\obj\Debug\net8.0\ref\MyHttpServer.dll
+D:\Projects\KFU\11-308\MyHttpServer\MyHttpServer\bin\Debug\net8.0\public\index.html
+D:\Projects\KFU\11-308\MyHttpServer\MyHttpServer\bin\Debug\net8.0\public\photo_2024-11-02_11-38-19.jpg
+D:\Projects\KFU\11-308\MyHttpServer\MyHttpServer\bin\Debug\net8.0\config.json

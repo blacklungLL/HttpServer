@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>ТурбоКино - Фильмы и сериалы</title>
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <script>
+        function redirectToLogin() {
+            window.location.href = 'auth/login';
+        }
+    </script>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="window_for_wrap">
+            <div class="logo_and_search">
+                <a href="main">
+                    <img src="../assets/images/logo.png" alt="logo">
+                </a>
+                <form action="/search" method="get">
+                    <input type="text" name="q" placeholder="Введите слово для поиска...">
+                </form>
+                <button type="button" id="authButton" onclick="redirectToLogin()">Авторизация</button>
+            </div>
+            <div class="first_two_blocks">
+                <div class="text_for_films">
+                    <div class="countries">
+                        {%for% country %in% countries}
+                        <a>{{country.name}}</a>
+                        {%/for%}
+                    </div>
+                    <ul class="genres">
+                        {%for% genre %in% genres}
+                        <li>
+                            <a>{{genre.name}}</a>
+                        </li>
+                        {%/for%}
+                    </ul>
+                </div>
+                <div class="popular_films">
+                    <h1>Popular Films</h1>
+                    <div class="film_covers">
+                        <div class="film_cover">
+                            <a href="film">
+                                <img src="../assets/images/Deadpool_&_Wolverine.png" alt="Film 6">
+                                <div class="film_title">Deadpool & Wolverine</div>
+                            </a>
+                        </div>
+                        {%for% film %in% popular}
+                        <div class="film_cover">
+                            <img src="{{film.cover_image}}" alt="Film 3">
+                            <div class="film_title">{{film.title}}</div>
+                        </div>
+                        {%/for%}
+                    </div>
+                    <div class="space_for_categories">
+                        <ul class="categories">
+                            {%for% category %in% categories}
+                            <li>
+                                <a>{{category.name}}</a>
+                            </li>
+                            {%/for%}
+                        </ul>
+                    </div>
+                    <div class="new_films">
+                        <h1>New films online for free</h1>
+                        <div class="new_films_cover">
+                            {%for% film %in% movies}
+                            <div class="new_film_cover">
+                                <img src="{{film.cover_image}}" alt="Film 3">
+                                <div class="film_title">{{film.title}}</div>
+                            </div>
+                            {%/for%}
+                        </div>
+                    </div>
+                    <div class="navigation">
+                        <button class="page-button" style="background-color: #225C98;">1</button>
+                        <button class="page-button">2</button>
+                        <button class="page-button">3</button>
+                        <button class="page-button">4</button>
+                        <button class="page-button">5</button>
+                        <button class="page-button">6</button>
+                        <button class="page-button">7</button>
+                        <button class="page-button">8</button>
+                        <button class="page-button">9</button>
+                        <button class="page-button">10</button>
+                    </div>
+                </div>
+            </div>
+            <div class="ruleowners">
+                <a href="#">Правообладателям</a>
+            </div>
+        </div>
+    </div>
+    <script src="../assets/js/script.js"></script>
+</body>
+</html>
