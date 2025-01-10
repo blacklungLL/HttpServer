@@ -14,7 +14,7 @@
  
 2. Установите Docker и добавьте SQL Server в вашу среду разработки. 
  
-3. В MyHttpServer/config.json и в HttpServerLibrary/Core/Configurations/AppConfig.cs укажите свой ConnectionString. 
+3. В HttpServerLibrary/Core/Configurations/AppConfig.cs укажите свой ConnectionString. 
  
 4. В MyHttpServer/SQL Tables Вы найдете SQL-файлы, в которых прописаны скрипты для создания таблиц базы данных и их заполнения. 
  
