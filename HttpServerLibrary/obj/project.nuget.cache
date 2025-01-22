@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "L/ZLZRg1TuBEgOAPH8WnGQwPA/UmyC++gruCSrQ5x2yrSgxeJywCRVKT//69q3j+corUPMpP3PcWxMGZXXODIw==",
+  "dgSpecHash": "m5fOd55Kl0I1RU3Y5vJ3Zo6A+7j7J4cSixiA0Mjq1AOGaqe7T/3MSRHoDrJAgODPUq72jhNofdIkkXVx0jlkxw==",
   "success": true,
-  "projectFilePath": "/Users/overmann/Desktop/MyHttpServer_19_11_24/HttpServerLibrary/HttpServerLibrary.csproj",
+  "projectFilePath": "/Users/overmann/Desktop/testgit/HttpServer/HttpServerLibrary/HttpServerLibrary.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

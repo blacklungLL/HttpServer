@@ -39,6 +39,7 @@ document.addEventListener('DOMContentLoaded', function () {
             // Находим таблицу и добавляем новую строку
             const table = document.getElementById('userTableBody');
             table.appendChild(newRow);
+            document.getElementById('addUserId').value = '';
             document.getElementById('addUserLogin').value = '';
             document.getElementById('addUserPassword').value = '';
             alert('Вы успешно добавили пользователя!')
@@ -89,9 +90,6 @@ document.addEventListener('DOMContentLoaded', function () {
             // Находим таблицу и добавляем новую строку
             const table = document.getElementById('movieTableBody');
             table.appendChild(newRow);
-            document.getElementById('addTitle').value = '';
-            document.getElementById('addCoverImage').value = '';
-            document.getElementById('addYear').value = '';
 
             alert('Вы успешно добавили фильм!')
 
@@ -135,27 +133,18 @@ document.addEventListener('DOMContentLoaded', function () {
             newRow.innerHTML = `
                 <td>${result.id}</td>
                 <td>${result.title}</td>
+                <td>${result.year}</td>
+                <td>${result.video_quality}</td>
+                <td>${result.kp_rating}</td>
+                <td>${result.country}</td>
+                <td>${result.duration}</td>
                 <td>${result.cover_image}</td>
                 <td>${result.plot_summary}</td>
-                <td>${result.year}</td>
-                <td>${result.country}</td>
-                <td>${result.video_quality}</td>
                 <td>${result.director_id}</td>
-                <td>${result.kp_rating}</td>
-                <td>${result.duration}</td>
             `;
             // Находим таблицу и добавляем новую строку
             const table = document.getElementById('movieDataTableBody');
             table.appendChild(newRow);
-            document.getElementById('addMovieDataTitle').value = '';
-            document.getElementById('addMovieDataCoverImageUrl').value = '';
-            document.getElementById('addMovieDataDescription').value = '';
-            document.getElementById('addMovieDataYear').value = '';
-            document.getElementById('addMovieDataCountry').value = '';
-            document.getElementById('addMovieDataQuality').value = '';
-            document.getElementById('addMovieDataDirector').value = '';
-            document.getElementById('addMovieDataRating').value = '';
-            document.getElementById('addMovieDataDuration').value = '';
 
             alert('Вы успешно добавили MovieData!')
 
@@ -392,13 +381,7 @@ document.addEventListener('DOMContentLoaded', function () {
             }
 
             const result = await response.json();
-
-            // Проверяем, есть ли ошибка в ответе
-            if (result.error) {
-                alert('Ошибка при удалении MovieData: ' + result.error);
-                return;
-            }
-
+            
             // Очищаем таблицу
             const tableBody = document.getElementById('movieDataTableBody');
             tableBody.innerHTML = '';
@@ -409,14 +392,14 @@ document.addEventListener('DOMContentLoaded', function () {
                 newRow.innerHTML = `
                     <td>${result.id}</td>
                     <td>${result.title}</td>
+                    <td>${result.year}</td>
+                    <td>${result.video_quality}</td>
+                    <td>${result.kp_rating}</td>
+                    <td>${result.country}</td>
+                    <td>${result.duration}</td>
                     <td>${result.cover_image}</td>
                     <td>${result.plot_summary}</td>
-                    <td>${result.year}</td>
-                    <td>${result.country}</td>
-                    <td>${result.video_quality}</td>
                     <td>${result.director_id}</td>
-                    <td>${result.kp_rating}</td>
-                    <td>${result.duration}</td>
                 `;
                 tableBody.appendChild(newRow);
             });

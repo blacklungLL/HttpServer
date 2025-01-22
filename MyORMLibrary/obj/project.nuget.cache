@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "HIjZ667E8tlgv+2cB2AaHs+dh6l0NaoVh2qJ/a5kvJCCgin0HjdLCPzlOeLk33ryQgMzdYREUNgAxxCzsC2DoQ==",
+  "dgSpecHash": "z45+aLW7yV1fjh7qbhBLP8DEEpQtIRddtmdCy9OBBjtIUhtsMt5RD2osXgludJXbY7PJDhjkk7ufZnmdMWJCvg==",
   "success": true,
-  "projectFilePath": "/Users/overmann/Desktop/MyHttpServer_19_11_24/MyORMLibrary/MyORMLibrary.csproj",
+  "projectFilePath": "/Users/overmann/Desktop/testgit/HttpServer/MyORMLibrary/MyORMLibrary.csproj",
   "expectedPackageFiles": [
     "/Users/overmann/.nuget/packages/documentformat.openxml/3.2.0/documentformat.openxml.3.2.0.nupkg.sha512",
     "/Users/overmann/.nuget/packages/documentformat.openxml.framework/3.2.0/documentformat.openxml.framework.3.2.0.nupkg.sha512",

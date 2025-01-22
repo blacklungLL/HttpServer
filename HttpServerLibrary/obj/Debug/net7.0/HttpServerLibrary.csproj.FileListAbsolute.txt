@@ -10,3 +10,15 @@
 /Users/overmann/Desktop/MyHttpServer_19_11_24/HttpServerLibrary/obj/Debug/net7.0/refint/HttpServerLibrary.dll
 /Users/overmann/Desktop/MyHttpServer_19_11_24/HttpServerLibrary/obj/Debug/net7.0/HttpServerLibrary.pdb
 /Users/overmann/Desktop/MyHttpServer_19_11_24/HttpServerLibrary/obj/Debug/net7.0/ref/HttpServerLibrary.dll
+/Users/overmann/Desktop/testgit/HttpServer/HttpServerLibrary/bin/Debug/net7.0/HttpServerLibrary.deps.json
+/Users/overmann/Desktop/testgit/HttpServer/HttpServerLibrary/bin/Debug/net7.0/HttpServerLibrary.dll
+/Users/overmann/Desktop/testgit/HttpServer/HttpServerLibrary/bin/Debug/net7.0/HttpServerLibrary.pdb
+/Users/overmann/Desktop/testgit/HttpServer/HttpServerLibrary/obj/Debug/net7.0/HttpServerLibrary.csproj.AssemblyReference.cache
+/Users/overmann/Desktop/testgit/HttpServer/HttpServerLibrary/obj/Debug/net7.0/HttpServerLibrary.GeneratedMSBuildEditorConfig.editorconfig
+/Users/overmann/Desktop/testgit/HttpServer/HttpServerLibrary/obj/Debug/net7.0/HttpServerLibrary.AssemblyInfoInputs.cache
+/Users/overmann/Desktop/testgit/HttpServer/HttpServerLibrary/obj/Debug/net7.0/HttpServerLibrary.AssemblyInfo.cs
+/Users/overmann/Desktop/testgit/HttpServer/HttpServerLibrary/obj/Debug/net7.0/HttpServerLibrary.csproj.CoreCompileInputs.cache
+/Users/overmann/Desktop/testgit/HttpServer/HttpServerLibrary/obj/Debug/net7.0/HttpServerLibrary.dll
+/Users/overmann/Desktop/testgit/HttpServer/HttpServerLibrary/obj/Debug/net7.0/refint/HttpServerLibrary.dll
+/Users/overmann/Desktop/testgit/HttpServer/HttpServerLibrary/obj/Debug/net7.0/HttpServerLibrary.pdb
+/Users/overmann/Desktop/testgit/HttpServer/HttpServerLibrary/obj/Debug/net7.0/ref/HttpServerLibrary.dll

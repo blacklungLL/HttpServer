@@ -802,3 +802,113 @@ button[type="submit"]:hover {
         margin-left: 0;
     }
 }
+
+@media (max-width: 431px) {
+    .wrapper, .wrapper_video {
+        margin-left: 0;
+        margin-top: 0;
+    }
+
+    .window_for_wrap, .window_for_wrap_video {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .logo_and_search {
+        display: flex;
+        align-items: flex-start;
+    }
+
+    .logo_and_search img {
+        max-width: 150px;
+    }
+
+    .logo_and_search form {
+        width: 100%;
+        padding: 0;
+    }
+
+    .logo_and_search input[type="text"] {
+        width: 35%;
+    }
+
+    .logo_and_search button {
+        width: 25%;
+    }
+
+    .first_two_blocks {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .text_for_films {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .countries, .genres {
+        text-align: center;
+    }
+
+    .popular_films {
+        margin-left: 0;
+    }
+
+    .popular_films h1 {
+        margin-left: 0;
+        font-size: 20px;
+    }
+
+    .film_covers, .new_films_cover {
+        justify-content: center;
+    }
+
+    .film_cover, .new_film_cover, .same_film_cover {
+        width: 100px;
+    }
+
+    .film_cover img, .new_film_cover img, .same_film_cover img {
+        max-width: 100px;
+        max-height: 150px;
+    }
+
+    .space_for_categories {
+        width: 100%;
+        padding-left: 0;
+    }
+
+    .categories, .categories_on_film {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navigation {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .ruleowners {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .auth-container {
+        margin-top: 5%;
+        margin-left: 0;
+        padding: 20px;
+    }
+
+    button[type="submit"] {
+        padding: 10px 0;
+        width: 100%;
+    }
+
+    .same_films h1 {
+        font-size: 14px;
+    }
+
+    .film-cover img {
+        width: 100px;
+        height: 150px;
+    }
+}

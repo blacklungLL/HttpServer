@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "kI+WJY7z5ZiTLbDtj+6p/ElfwvpxX08/ULo3ve8y6jFySd6YPQnBs9eTf3I/IHwOyHMN1lkxEDHHdupsbG75Qg==",
+  "dgSpecHash": "u0q1PUapbNP9QacNenSjzLzdM2ozgW24iBSlycBJMlyo4GJ7fcFtllMafcwdkO1F3EPBOTkrYiJl6/Cccc+dVA==",
   "success": true,
-  "projectFilePath": "/Users/overmann/Desktop/MyHttpServer_19_11_24/MyORMLibrary.Tests/MyORMLibrary.Tests.csproj",
+  "projectFilePath": "/Users/overmann/Desktop/testgit/HttpServer/MyORMLibrary.Tests/MyORMLibrary.Tests.csproj",
   "expectedPackageFiles": [
     "/Users/overmann/.nuget/packages/castle.core/5.1.1/castle.core.5.1.1.nupkg.sha512",
     "/Users/overmann/.nuget/packages/coverlet.collector/3.2.0/coverlet.collector.3.2.0.nupkg.sha512",

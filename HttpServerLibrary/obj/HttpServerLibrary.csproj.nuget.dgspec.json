@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/overmann/Desktop/MyHttpServer_19_11_24/HttpServerLibrary/HttpServerLibrary.csproj": {}
+    "/Users/overmann/Desktop/testgit/HttpServer/HttpServerLibrary/HttpServerLibrary.csproj": {}
   },
   "projects": {
-    "/Users/overmann/Desktop/MyHttpServer_19_11_24/HttpServerLibrary/HttpServerLibrary.csproj": {
+    "/Users/overmann/Desktop/testgit/HttpServer/HttpServerLibrary/HttpServerLibrary.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/overmann/Desktop/MyHttpServer_19_11_24/HttpServerLibrary/HttpServerLibrary.csproj",
+        "projectUniqueName": "/Users/overmann/Desktop/testgit/HttpServer/HttpServerLibrary/HttpServerLibrary.csproj",
         "projectName": "HttpServerLibrary",
-        "projectPath": "/Users/overmann/Desktop/MyHttpServer_19_11_24/HttpServerLibrary/HttpServerLibrary.csproj",
+        "projectPath": "/Users/overmann/Desktop/testgit/HttpServer/HttpServerLibrary/HttpServerLibrary.csproj",
         "packagesPath": "/Users/overmann/.nuget/packages/",
-        "outputPath": "/Users/overmann/Desktop/MyHttpServer_19_11_24/HttpServerLibrary/obj/",
+        "outputPath": "/Users/overmann/Desktop/testgit/HttpServer/HttpServerLibrary/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/overmann/.nuget/NuGet/NuGet.Config"

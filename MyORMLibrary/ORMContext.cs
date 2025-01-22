@@ -66,44 +66,46 @@ public class ORMContext<T> where T : class, new()
         return results;
     }
     
-    public T Create<T>(T entity, string tableName) where T : class
+    public T Create(T entity)
     {
-        using (SqlConnection connection = new SqlConnection(_dbConnection.ConnectionString))
+        var properties = typeof(T).GetProperties();
+        var columnNames = string.Join(", ", properties.Select(p => p.Name));
+        var parameterNames = string.Join(", ", properties.Select(p => "@" + p.Name));
+
+        string sql = $"INSERT INTO {typeof(T).Name} ({columnNames}) VALUES ({parameterNames})";
+
+        try
         {
-            connection.Open();
-    
-            var properties = typeof(T).GetProperties();
-    
-            // Строим SQL-запрос
-            var columnNames = new List<string>();
-            var parameterNames = new List<string>(); 
-    
-            foreach (var property in properties)
+            using (var command = _dbConnection.CreateCommand())
             {
-                columnNames.Add(property.Name); 
-                parameterNames.Add("@" + property.Name);
-            }
-    
-            string sql = $"INSERT INTO {tableName} ({string.Join(", ", columnNames)}) VALUES ({string.Join(", ", parameterNames)}); SELECT SCOPE_IDENTITY();";
-    
-            using (SqlCommand command = new SqlCommand(sql, connection))
-            {
+                command.CommandText = sql;
                 foreach (var property in properties)
-                { 
-                    var value = property.GetValue(entity);
-                    command.Parameters.AddWithValue("@" + property.Name, value ?? DBNull.Value); // Устанавливаем параметр, заменяя null на DBNull
-                }
-    
-                var id = command.ExecuteScalar(); 
-    
-                var idProperty = typeof(T).GetProperty("Id");
-                if (idProperty != null && idProperty.CanWrite)
                 {
-                    idProperty.SetValue(entity, Convert.ToInt32(id));
+                    var parameter = command.CreateParameter();
+                    parameter.ParameterName = $"@{property.Name}";
+                    parameter.Value = property.GetValue(entity) ?? DBNull.Value;
+                    command.Parameters.Add(parameter);
+                }
+
+                _dbConnection.Open();
+                var result = command.ExecuteScalar();
+                if (result != null && int.TryParse(result.ToString(), out int newId))
+                {
+                    var idProperty = typeof(T).GetProperty("id");
+                    idProperty?.SetValue(entity, newId);
                 }
             }
         }
-    
+        catch (Exception ex)
+        {
+            // Логирование ошибки
+            Console.WriteLine($"Error: {ex.Message}");
+        }
+        finally
+        {
+            _dbConnection.Close();
+        }
+
         return entity;
     }
       
@@ -227,7 +229,7 @@ public class ORMContext<T> where T : class, new()
     public void CreateMovie(T entity)
     {
         var properties = entity.GetType().GetProperties()
-            .Where(p => p.Name != "id");
+            .Where(p => p.Name != "id" && p.Name != "Id"); 
         var columns = string.Join(", ", properties.Select(p => p.Name));
         var values = string.Join(", ", properties.Select(p => '@' + p.Name));
         string query = $"INSERT INTO {typeof(T).Name} ({columns}) VALUES ({values})";
@@ -248,13 +250,12 @@ public class ORMContext<T> where T : class, new()
         }
     }
     
-    public void CreateMovieData(T entity)
+    public void CreateMovieData(T entity, string tableName)
     {
-        var properties = entity.GetType().GetProperties()
-            .Where(p => p.Name != "id"); 
+        var properties = entity.GetType().GetProperties();
         var columns = string.Join(", ", properties.Select(p => p.Name));
         var values = string.Join(", ", properties.Select(p => '@' + p.Name));
-        string query = $"INSERT INTO {typeof(T).Name} ({columns}) VALUES ({values})";
+        string query = $"INSERT INTO {tableName} ({columns}) VALUES ({values})";
 
         using (var command = _dbConnection.CreateCommand())
         {
@@ -271,6 +272,7 @@ public class ORMContext<T> where T : class, new()
             _dbConnection.Close();
         }
     }
+
     
     public T GetById(int Id)
     {
@@ -326,12 +328,12 @@ public class ORMContext<T> where T : class, new()
     
     public void Delete(string id, string tableName)
     {
-        string query = $"DELETE FROM {tableName} WHERE id = @Id";
+        string query = $"DELETE FROM {tableName} WHERE id = @id";
         using (var command = _dbConnection.CreateCommand())
         {
             command.CommandText = query;
             var parameter = command.CreateParameter();
-            parameter.ParameterName = "@Id";
+            parameter.ParameterName = "@id";
             parameter.Value = id;
             command.Parameters.Add(parameter);
             _dbConnection.Open();
@@ -342,12 +344,12 @@ public class ORMContext<T> where T : class, new()
     
     public void DeleteMovieData(string id, string tableName)
     {
-        string query = $"DELETE FROM {tableName} WHERE id = @MovieId";
+        string query = $"DELETE FROM {tableName} WHERE id = @id";
         using (var command = _dbConnection.CreateCommand())
         {
             command.CommandText = query;
             var parameter = command.CreateParameter();
-            parameter.ParameterName = "@MovieId";
+            parameter.ParameterName = "@id";
             parameter.Value = id;
             command.Parameters.Add(parameter);
             _dbConnection.Open();
@@ -439,16 +441,16 @@ public class ORMContext<T> where T : class, new()
         return null;
     }
     
-    public T GetByTitle(string Title)
+    public T GetByTitle(string title)
     {
-        string query = $"SELECT * FROM {typeof(T).Name} WHERE title = @Title";
+        string query = $"SELECT * FROM {typeof(T).Name} WHERE title = @title";
 
         using (var command = _dbConnection.CreateCommand())
         {
             command.CommandText = query;
             var parameter = command.CreateParameter();
-            parameter.ParameterName = "@Title";
-            parameter.Value = Title;
+            parameter.ParameterName = "@title";
+            parameter.Value = title;
             command.Parameters.Add(parameter);
 
             _dbConnection.Open();

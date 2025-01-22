@@ -354,11 +354,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/overmann/Desktop/MyHttpServer_19_11_24/MyHttpServer/MyHttpServer.csproj",
+      "projectUniqueName": "/Users/overmann/Desktop/testgit/HttpServer/MyHttpServer/MyHttpServer.csproj",
       "projectName": "MyHttpServer",
-      "projectPath": "/Users/overmann/Desktop/MyHttpServer_19_11_24/MyHttpServer/MyHttpServer.csproj",
+      "projectPath": "/Users/overmann/Desktop/testgit/HttpServer/MyHttpServer/MyHttpServer.csproj",
       "packagesPath": "/Users/overmann/.nuget/packages/",
-      "outputPath": "/Users/overmann/Desktop/MyHttpServer_19_11_24/MyHttpServer/obj/",
+      "outputPath": "/Users/overmann/Desktop/testgit/HttpServer/MyHttpServer/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/overmann/.nuget/NuGet/NuGet.Config"
@@ -373,14 +373,14 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "/Users/overmann/Desktop/MyHttpServer_19_11_24/HttpServerLibrary/HttpServerLibrary.csproj": {
-              "projectPath": "/Users/overmann/Desktop/MyHttpServer_19_11_24/HttpServerLibrary/HttpServerLibrary.csproj"
+            "/Users/overmann/Desktop/testgit/HttpServer/HttpServerLibrary/HttpServerLibrary.csproj": {
+              "projectPath": "/Users/overmann/Desktop/testgit/HttpServer/HttpServerLibrary/HttpServerLibrary.csproj"
             },
-            "/Users/overmann/Desktop/MyHttpServer_19_11_24/MyORMLibrary/MyORMLibrary.csproj": {
-              "projectPath": "/Users/overmann/Desktop/MyHttpServer_19_11_24/MyORMLibrary/MyORMLibrary.csproj"
+            "/Users/overmann/Desktop/testgit/HttpServer/MyORMLibrary/MyORMLibrary.csproj": {
+              "projectPath": "/Users/overmann/Desktop/testgit/HttpServer/MyORMLibrary/MyORMLibrary.csproj"
             },
-            "/Users/overmann/Desktop/MyHttpServer_19_11_24/TemplateEngine/TemplateEngine.csproj": {
-              "projectPath": "/Users/overmann/Desktop/MyHttpServer_19_11_24/TemplateEngine/TemplateEngine.csproj"
+            "/Users/overmann/Desktop/testgit/HttpServer/TemplateEngine/TemplateEngine.csproj": {
+              "projectPath": "/Users/overmann/Desktop/testgit/HttpServer/TemplateEngine/TemplateEngine.csproj"
             }
           }
         }

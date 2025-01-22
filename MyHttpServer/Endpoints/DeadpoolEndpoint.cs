@@ -14,8 +14,9 @@ namespace MyHttpServer.Endpoints;
 public class FilmEndpoint : EndpointBase
 {
     [Get("film")]
-    public IHttpResponseResult GetFilm()
+    public IHttpResponseResult GetFilm(int id)
     {
+        
         if (!IsAuthorized(Context))
         {
             return Redirect("auth/login");
@@ -24,12 +25,13 @@ public class FilmEndpoint : EndpointBase
         var responseText = File.ReadAllText(localPath);
 
         var movieContext = new ORMContext<MovieData>(new SqlConnection(AppConfig.GetInstance().ConnectionString));
-        var movie = movieContext.ReadMovieById(1);
+        var movie = movieContext.ReadMovieById(id);
         
         var template = new HtmlTemplateEngine();
         var res = template.Render(responseText, movie);
         return Html(res);
     }
+    
     
     private bool IsAuthorized(HttpRequestContext context)
     {

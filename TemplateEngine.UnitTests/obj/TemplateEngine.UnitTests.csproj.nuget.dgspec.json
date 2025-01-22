@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/overmann/Desktop/MyHttpServer_19_11_24/TemplateEngine.UnitTests/TemplateEngine.UnitTests.csproj": {}
+    "/Users/overmann/Desktop/testgit/HttpServer/TemplateEngine.UnitTests/TemplateEngine.UnitTests.csproj": {}
   },
   "projects": {
-    "/Users/overmann/Desktop/MyHttpServer_19_11_24/TemplateEngine.UnitTests/TemplateEngine.UnitTests.csproj": {
+    "/Users/overmann/Desktop/testgit/HttpServer/TemplateEngine.UnitTests/TemplateEngine.UnitTests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/overmann/Desktop/MyHttpServer_19_11_24/TemplateEngine.UnitTests/TemplateEngine.UnitTests.csproj",
+        "projectUniqueName": "/Users/overmann/Desktop/testgit/HttpServer/TemplateEngine.UnitTests/TemplateEngine.UnitTests.csproj",
         "projectName": "TemplateEngine.UnitTests",
-        "projectPath": "/Users/overmann/Desktop/MyHttpServer_19_11_24/TemplateEngine.UnitTests/TemplateEngine.UnitTests.csproj",
+        "projectPath": "/Users/overmann/Desktop/testgit/HttpServer/TemplateEngine.UnitTests/TemplateEngine.UnitTests.csproj",
         "packagesPath": "/Users/overmann/.nuget/packages/",
-        "outputPath": "/Users/overmann/Desktop/MyHttpServer_19_11_24/TemplateEngine.UnitTests/obj/",
+        "outputPath": "/Users/overmann/Desktop/testgit/HttpServer/TemplateEngine.UnitTests/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/overmann/.nuget/NuGet/NuGet.Config"
@@ -26,8 +26,8 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "/Users/overmann/Desktop/MyHttpServer_19_11_24/TemplateEngine/TemplateEngine.csproj": {
-                "projectPath": "/Users/overmann/Desktop/MyHttpServer_19_11_24/TemplateEngine/TemplateEngine.csproj"
+              "/Users/overmann/Desktop/testgit/HttpServer/TemplateEngine/TemplateEngine.csproj": {
+                "projectPath": "/Users/overmann/Desktop/testgit/HttpServer/TemplateEngine/TemplateEngine.csproj"
               }
             }
           }
@@ -67,14 +67,14 @@
         }
       }
     },
-    "/Users/overmann/Desktop/MyHttpServer_19_11_24/TemplateEngine/TemplateEngine.csproj": {
+    "/Users/overmann/Desktop/testgit/HttpServer/TemplateEngine/TemplateEngine.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/overmann/Desktop/MyHttpServer_19_11_24/TemplateEngine/TemplateEngine.csproj",
+        "projectUniqueName": "/Users/overmann/Desktop/testgit/HttpServer/TemplateEngine/TemplateEngine.csproj",
         "projectName": "TemplateEngine",
-        "projectPath": "/Users/overmann/Desktop/MyHttpServer_19_11_24/TemplateEngine/TemplateEngine.csproj",
+        "projectPath": "/Users/overmann/Desktop/testgit/HttpServer/TemplateEngine/TemplateEngine.csproj",
         "packagesPath": "/Users/overmann/.nuget/packages/",
-        "outputPath": "/Users/overmann/Desktop/MyHttpServer_19_11_24/TemplateEngine/obj/",
+        "outputPath": "/Users/overmann/Desktop/testgit/HttpServer/TemplateEngine/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/overmann/.nuget/NuGet/NuGet.Config"

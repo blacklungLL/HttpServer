@@ -1555,11 +1555,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/overmann/Desktop/MyHttpServer_19_11_24/MyORMLibrary.Tests/MyORMLibrary.Tests.csproj",
+      "projectUniqueName": "/Users/overmann/Desktop/testgit/HttpServer/MyORMLibrary.Tests/MyORMLibrary.Tests.csproj",
       "projectName": "MyORMLibrary.Tests",
-      "projectPath": "/Users/overmann/Desktop/MyHttpServer_19_11_24/MyORMLibrary.Tests/MyORMLibrary.Tests.csproj",
+      "projectPath": "/Users/overmann/Desktop/testgit/HttpServer/MyORMLibrary.Tests/MyORMLibrary.Tests.csproj",
       "packagesPath": "/Users/overmann/.nuget/packages/",
-      "outputPath": "/Users/overmann/Desktop/MyHttpServer_19_11_24/MyORMLibrary.Tests/obj/",
+      "outputPath": "/Users/overmann/Desktop/testgit/HttpServer/MyORMLibrary.Tests/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/overmann/.nuget/NuGet/NuGet.Config"
@@ -1574,8 +1574,8 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "/Users/overmann/Desktop/MyHttpServer_19_11_24/MyORMLibrary/MyORMLibrary.csproj": {
-              "projectPath": "/Users/overmann/Desktop/MyHttpServer_19_11_24/MyORMLibrary/MyORMLibrary.csproj"
+            "/Users/overmann/Desktop/testgit/HttpServer/MyORMLibrary/MyORMLibrary.csproj": {
+              "projectPath": "/Users/overmann/Desktop/testgit/HttpServer/MyORMLibrary/MyORMLibrary.csproj"
             }
           }
         }

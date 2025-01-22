@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "rhKUMD63qQlKVNNaluJ8EQdnPaIScwI6jHegb3yQ3rC5XkYqGc2/g80v1WrzO3NFKsTftsEjzEOyUY0Wqi5PaQ==",
+  "dgSpecHash": "aGLAf16OXXd4ZVzw7L5qjUwIegpu9DTdD23EF4tY3idsUEdevJC5Uxf0nNaUgvkSAb206RmcFM92QYtBJH3dvA==",
   "success": true,
-  "projectFilePath": "/Users/overmann/Desktop/MyHttpServer_19_11_24/MyHttpServer/MyHttpServer.csproj",
+  "projectFilePath": "/Users/overmann/Desktop/testgit/HttpServer/MyHttpServer/MyHttpServer.csproj",
   "expectedPackageFiles": [
     "/Users/overmann/.nuget/packages/documentformat.openxml/3.2.0/documentformat.openxml.3.2.0.nupkg.sha512",
     "/Users/overmann/.nuget/packages/documentformat.openxml.framework/3.2.0/documentformat.openxml.framework.3.2.0.nupkg.sha512",

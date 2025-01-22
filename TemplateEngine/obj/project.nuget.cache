@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "9yv8wKB4qIjEh4oRJhHut1oGA/q2ORpVFYsGuOQUJ6VLHMUDlI/w/C/bz9pPr1KHVQhsZN9yIg54W0eNXsxR+Q==",
+  "dgSpecHash": "kGeafhcwqUKx/vy8mSNLPRfa5nrwl90QmHbzvSfqvQz29fvQ/HczEZ9rrgm3LQia4qMFRkkz04RBd4kPCNhpCA==",
   "success": true,
-  "projectFilePath": "/Users/overmann/Desktop/MyHttpServer_19_11_24/TemplateEngine/TemplateEngine.csproj",
+  "projectFilePath": "/Users/overmann/Desktop/testgit/HttpServer/TemplateEngine/TemplateEngine.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/overmann/Desktop/MyHttpServer_19_11_24/TemplateEngine/TemplateEngine.csproj",
+      "projectUniqueName": "/Users/overmann/Desktop/testgit/HttpServer/TemplateEngine/TemplateEngine.csproj",
       "projectName": "TemplateEngine",
-      "projectPath": "/Users/overmann/Desktop/MyHttpServer_19_11_24/TemplateEngine/TemplateEngine.csproj",
+      "projectPath": "/Users/overmann/Desktop/testgit/HttpServer/TemplateEngine/TemplateEngine.csproj",
       "packagesPath": "/Users/overmann/.nuget/packages/",
-      "outputPath": "/Users/overmann/Desktop/MyHttpServer_19_11_24/TemplateEngine/obj/",
+      "outputPath": "/Users/overmann/Desktop/testgit/HttpServer/TemplateEngine/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/overmann/.nuget/NuGet/NuGet.Config"

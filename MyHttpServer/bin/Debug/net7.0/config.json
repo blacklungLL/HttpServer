@@ -11,5 +11,6 @@
   "NetworkCredential": {
     "UserName": "high-skill33@yandex.ru",
     "Password": "uvrstzrhemkckntt"
-  }
+  },
+  "ConnectionString": "Data Source=localhost; Initial Catalog=PersonDB;User ID=sa;Password=HqR3dps76nmbT;"
 }

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "OBAQAnCU1uE2xHxkSZKdDEuKRUDTfM50rngK2vthT4CC/bBtopxgpAEfiMVxKa2QB+zx+hOYIEHEwxgS8giQCA==",
+  "dgSpecHash": "EckYvIxnEhB3HNK6buPrG0/+hFcDzsYPS2rlLq3K/8/iP+AQH0hhBYDY3uueReTxAR2PxTIVNSmayrejRodJ0w==",
   "success": true,
-  "projectFilePath": "/Users/overmann/Desktop/MyHttpServer_19_11_24/TemplateEngine.UnitTests/TemplateEngine.UnitTests.csproj",
+  "projectFilePath": "/Users/overmann/Desktop/testgit/HttpServer/TemplateEngine.UnitTests/TemplateEngine.UnitTests.csproj",
   "expectedPackageFiles": [
     "/Users/overmann/.nuget/packages/nunit/4.2.2/nunit.4.2.2.nupkg.sha512"
   ],

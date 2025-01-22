@@ -44,16 +44,12 @@
                 <div class="popular_films">
                     <h1>Popular Films</h1>
                     <div class="film_covers">
-                        <div class="film_cover">
-                            <a href="film">
-                                <img src="../assets/images/Deadpool_&_Wolverine.png" alt="Film 6">
-                                <div class="film_title">Deadpool & Wolverine</div>
-                            </a>
-                        </div>
                         {%for% film %in% popular}
                         <div class="film_cover">
-                            <img src="{{film.cover_image}}" alt="Film 3">
-                            <div class="film_title">{{film.title}}</div>
+                            <a href="film?id={{film.id}}">
+                                <img src="{{film.cover_image}}" alt="Film 3">
+                                <div class="film_title">{{film.title}}</div>
+                            </a>
                         </div>
                         {%/for%}
                     </div>
@@ -71,8 +67,10 @@
                         <div class="new_films_cover">
                             {%for% film %in% movies}
                             <div class="new_film_cover">
-                                <img src="{{film.cover_image}}" alt="Film 3">
-                                <div class="film_title">{{film.title}}</div>
+                                <a href="film?id={{film.id}}">
+                                    <img src="{{film.cover_image}}" alt="Film 3">
+                                    <div class="film_title">{{film.title}}</div>
+                                </a>
                             </div>
                             {%/for%}
                         </div>

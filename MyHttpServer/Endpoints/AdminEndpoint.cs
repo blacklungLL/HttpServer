@@ -1,5 +1,6 @@
 using System.Data.SqlClient;
 using System.Net;
+using DocumentFormat.OpenXml.Office2010.Excel;
 using HttpServerLibrary;
 using HttpServerLibrary.Attributes;
 using HttpServerLibrary.Configurations;
@@ -109,17 +110,18 @@ public class AdminEndpoint : EndpointBase
     }
     
     [Post("admin/user/add")]
-    public IHttpResponseResult AddUser(string addUserLogin, string addUserPassword)
+    public IHttpResponseResult AddUser(string addUserLogin, string addUserPassword, int addUserId)
     {
         try
         {
             var user_context = new ORMContext<Users>(new SqlConnection(AppConfig.GetInstance().ConnectionString));
             Users newUsers = new Users
             {
+                Id = addUserId,
                 Login = addUserLogin,
                 Password = addUserPassword
             };
-            user_context.Create(newUsers, "Users");
+            user_context.Create(newUsers);
             var user = user_context.GetUserByLogin(addUserLogin);
             return Json(user);
         }
@@ -153,21 +155,22 @@ public class AdminEndpoint : EndpointBase
     }
     
     [Post("admin/movie/add")]
-    public IHttpResponseResult AddMovie(string addTitle, string addImageUrl, int addYear)
+    public IHttpResponseResult AddMovie(string addTitle, string addCoverImage, int addYear, int addFilmId)
     {
         try
         {
-            Console.WriteLine($"Adding movie with title: {addTitle}, image URL: {addImageUrl}, Year: {addYear}");
+            Console.WriteLine($"Adding movie with title: {addTitle}, image URL: {addCoverImage}, Year: {addYear}");
             var movie_context = new ORMContext<movies>(new SqlConnection(AppConfig.GetInstance().ConnectionString));
 
             movies newMovie = new movies
             {
+                id = addFilmId,
                 title = addTitle,
-                cover_image = addImageUrl,
+                cover_image = addCoverImage,
                 Year = addYear
             };
             Console.WriteLine("Attempting to add movie to the database...");
-            movie_context.CreateMovie(newMovie);
+            movie_context.Create(newMovie);
             Console.WriteLine("Movie added successfully.");
 
             var movie = movie_context.GetByTitle(addTitle);
@@ -203,24 +206,25 @@ public class AdminEndpoint : EndpointBase
     }
     
     [Post("admin/moviedata/add")]
-    public IHttpResponseResult AddMovieData(string addMovieDataTitle, int addMovieDataYear, string addMovieDataDescription, string addMovieDataQuality, decimal addMovieDataRating, string addMovieDataCountry, int addMovieDuration, string addMovieDataCoverImage, int addMovieDataDirectorId)
+    public IHttpResponseResult AddMovieData(string addMovieDataTitle, int addMovieDataYear, string addMovieDataDescription, string addMovieDataQuality, decimal addMovieDataRating, string addMovieDataCountry, int addMovieDataDuration, string addMovieDataCoverImage, int addMovieDataDirector, int addMovieDataId)
     {
         try
         {
             var moviedata_context = new ORMContext<MovieData>(new SqlConnection(AppConfig.GetInstance().ConnectionString));
             MovieData newMovieData = new MovieData
             {
+                id = addMovieDataId,
                 title = addMovieDataTitle,
                 year = addMovieDataYear,
                 video_quality = addMovieDataQuality,
                 kp_rating = addMovieDataRating,
                 country = addMovieDataCountry,
-                duration = addMovieDuration,
+                duration = addMovieDataDuration,
                 cover_image = addMovieDataCoverImage,
                 plot_summary = addMovieDataDescription,
-                director_id = addMovieDataDirectorId
+                director_id = addMovieDataDirector
             };
-            moviedata_context.CreateMovieData(newMovieData);
+            moviedata_context.CreateMovieData(newMovieData, "films");
             var movieData = moviedata_context.GetByTitle(addMovieDataTitle);
             return Json(movieData);
         }
@@ -254,16 +258,17 @@ public class AdminEndpoint : EndpointBase
     }
     
     [Post("admin/genre/add")]
-    public IHttpResponseResult AddGenre(string addGenreName)
+    public IHttpResponseResult AddGenre(string addGenreName, int addGenreId)
     {
         try
         {
             var genre_context = new ORMContext<genres>(new SqlConnection(AppConfig.GetInstance().ConnectionString));
-            genres newGenre = new genres()
+            genres newGenre = new genres
             {
+                id = addGenreId,
                 name = addGenreName
             };
-            genre_context.Create(newGenre, "genres");
+            genre_context.Create(newGenre);
             var genre = genre_context.GetByGenreName(addGenreName);
             return Json(genre);
         }
@@ -297,16 +302,17 @@ public class AdminEndpoint : EndpointBase
     }
     
     [Post("admin/country/add")]
-    public IHttpResponseResult AddCountry(string addCountryName)
+    public IHttpResponseResult AddCountry(string addCountryName, int addCountryId)
     {
         try
         {
             var country_context = new ORMContext<countries>(new SqlConnection(AppConfig.GetInstance().ConnectionString));
             countries newCountry = new countries()
             {
+                id = addCountryId,
                 name = addCountryName
             };
-            country_context.Create(newCountry, "countries");
+            country_context.Create(newCountry);
             var country = country_context.GetByCountryName(addCountryName);
             return Json(country);
         }
