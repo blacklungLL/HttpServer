@@ -11,5 +11,8 @@
   "NetworkCredential": {
     "UserName": "high-skill33@yandex.ru",
     "Password": "uvrstzrhemkckntt"
+  },
+  "ConnectionStrings": {
+    "DefaultConnection": "Server=db;Database=Users;User Id=sa;Password=HqR3dps76nmbT;"
   }
 }

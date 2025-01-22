@@ -26,7 +26,7 @@ namespace HttpServerLibrary.Configurations
         public string AddPath { get; set; } = "Templates/Pages/";
 
         public string ConnectionString { get; set; } =
-            @"Data Source=localhost; Initial Catalog=PersonDB;User ID=sa;Password=HqR3dps76nmbT;";
+            "Data Source=localhost; Initial Catalog=PersonDB;User ID=sa;Password=HqR3dps76nmbT;";
 
         public SmtpClient? SmtpClient { get; set; }
 
