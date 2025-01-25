@@ -13,6 +13,6 @@
     "Password": "uvrstzrhemkckntt"
   },
   "ConnectionStrings": {
-    "DefaultConnection": "Server=db;Database=Users;User Id=sa;Password=HqR3dps76nmbT;"
+    "DefaultConnection": "Server=db;Database=PersonDB;User Id=sa;Password=HqR3dps76nmbT;"
   }
 }
